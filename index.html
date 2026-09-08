@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>DITizens | Loading</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #loadingScreen {
+            width: 100vw;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #000;
+        }
+
+        #loadingGif {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loadingScreen">
+
+        <img
+            id="loadingGif"
+            src="https://www.image2url.com/r2/default/gifs/1788864812154-8dea492c-dcc3-44ea-8ca0-14735342b3ec.gif"
+            alt="Loading..."
+        >
+
+    </div>
+
+
+    <script>
+
+        // Wait 5 seconds
+        setTimeout(function() {
+
+            // Redirect to your Google Sites Main Menu
+            window.location.replace(
+                "https://sites.google.com/view/ditizens/individual-projects/Main-menu/main-menu"
+            );
+
+        }, 5000);
+
+    </script>
+
+</body>
+</html>
